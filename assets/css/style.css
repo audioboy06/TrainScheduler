@@ -1,0 +1,30 @@
+/* CSS file for Timesheet Exercise */
+
+/* CLASSES */
+
+.jumbotron {
+    background-image: url(../images/station_night.jpg);
+    color: whitesmoke;
+    margin: 15px 0px 0px 0px;
+}
+
+.panel {
+    margin: 0px 15px 15px 15px;
+    border-color: rgb(10,24,162);
+    border-width: 2px;
+
+}
+
+/* ID's */
+
+#style {
+    background: rgb(10,24,162);
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+#add-train-button {
+    background: rgb(10,24,162);
+    color: whitesmoke;
+    font-size: 16px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Underground Train Schedule</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1 id="header">Train Schedule</h1>
+            <h3 id="subheader">A Comprehensive Directory of the London Underground</h3>
+        </div>
+    </div>
+        <br>
+        <div class="panel panel-info" id="trainLines">
+            <div class="panel-heading" id="style">Current Times</div>
+                <table class="table table-hover" id="train-table">
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Origination</th>
+                            <th>Destination</th>
+                            <th>Frequency</th>
+                            <th>Next Arrival</th>
+                            <th>Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>District</td>
+                            <td>Upminster</td>
+                            <td>Ealing Broadway</td>
+                            <td>15</td>
+                            <td>undefined</td>
+                            <td>undefined</td>
+                        </tr>
+                        <tr>
+                            <td>Circle</td>
+                            <td>Edgware Road</td>
+                            <td>Aldgate</td>
+                            <td>19</td>
+                            <td>undefined</td>
+                            <td>undefined</td>
+                        </tr>
+                        <tr>
+                            <td>Hammersmith & City</td>
+                            <td>Hammersmith</td>
+                            <td>Barking</td>
+                            <td>16</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Bakerloo</td>
+                            <td>Harrow & Wealdstone</td>
+                            <td>Elephant & Castle</td>
+                            <td>18</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Waterloo & City</td>
+                            <td>Waterloo</td>
+                            <td>Bank</td>
+                            <td>7</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Central</td>
+                            <td>Epping</td>
+                            <td>West Ruislip</td>
+                            <td>21</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Piccadilly</td>
+                            <td>Cockfosters</td>
+                            <td>Heathrow Airport</td>
+                            <td>16</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Jubilee</td>
+                            <td>Stanmore</td>
+                            <td>Stratford</td>
+                            <td>10</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Metropolitan</td>
+                            <td>Aldgate</td>
+                            <td>Amersham/Chesham</td>
+                            <td>30</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Victoria</td>
+                            <td>Walthamstow Central</td>
+                            <td>Brixton</td>
+                            <td>10</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr>
+                        <tr>
+                            <td>Northern</td>
+                            <td>High Barnet</td>
+                            <td>Morden</td>
+                            <td>5</td>
+                            <td>undefined</td>
+                            <td>undefined</td>                        
+                        </tr> -->
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="panel panel-info" id="addSchedule">
+                <div class="panel-heading" id="style">Add a Train Line</div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="inputName">Train Name</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="line">
+                </div>
+                <div class="form-group">
+                    <label for="inputOrig">Origination</label>
+                    <input type="text" class="form-control" id="inputOrig" placeholder="origination">
+                </div>
+                <div class="form-group">
+                    <label for="inputDest">Destination</label>
+                    <input type="text" class="form-control" id="inputDest" placeholder="destination">
+                </div>
+                <div class="form-group">
+                    <label for="inputFirstTime">First Train Time</label>
+                    <input type="text" class="form-control" id="inputFirstTime" placeholder="HH:mm(military time)">
+                </div>
+                <div class="form-group">
+                    <label for="inputFrequency">Frequency</label>
+                    <input type="text" class="form-control" id="inputFrequency" placeholder="mins">
+                </div>
+                <button type="submit" class="btn btn-primary" id="add-train-button">Add Train</button>
+            </form>
+        </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
+
+</body>
+
+
+
+
+</html>
